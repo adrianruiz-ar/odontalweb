@@ -1,6 +1,6 @@
 // Función texto maquina escribir hero Home
 
-var words = ['Planifica...', 'Elabora...', 'Procesa...', 'Gestiona...', 'Administra...', 'Factura...', 'Registra...', 'Agiliza...', 'Contabiliza...'],
+var words = ['Simplifica...', 'Soluciona...', 'Optimiza...', 'Fideliza...', 'Integra...', 'Maximiza...'],
     wordWrapper = document.getElementById('word'),
     wordWrapperContent = wordWrapper.innerHTML,
     addingWord = false,
