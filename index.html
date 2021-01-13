@@ -8,24 +8,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OdontalWeb - OW</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/9465af706e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Cabecera del Sitio-->
     <header>
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-light pt-5">
             <div class="container">
-                <div class="row my-5">
-                    <div class="col-6 centrarNav">
-                        <img src="img/OdontalWeb-Horizontal.png" alt="OdontalWeb" style="width: 250px">
-                    </div>
-                    <div class="col-6 ml-auto text-right pt-3 centrarNav">
+                <a class="navbar-brand" href="#"><img src="img/header-logo-odontal.png" alt="OdontalWeb"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
                         <a href="#form"><button id="btnRegistro" type="button" class="btn btn-dark">PEDILO</button></a>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -39,51 +45,55 @@
                 <div class="row my-5">
                     <div class="col-md-6 order-md-2">
                         <div class="heroImagen">
-                            
-                            <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_m19bbzse.json" mode="bounce" background="transparent"  speed="1"  style="width: 450px; height: 450px;" autoplay></lottie-player>
-                            
-                            <!-- <img src="img/home-hero.png" alt="OdontalWeb" class="img-fluid rounded mx-auto"> -->
-
+                            <img src="img/home-hero.png" alt="OdontalWeb" class="img-fluid rounded mx-auto">
                         </div>
                     </div>
                     <div class="col-md-6 p-4 order-md-1">
-                        <h1 class="display-4">Bienvenidos a Odontal Web</h1>
-                        <h2>El software totalmente en la nube que todo odontólogo estaba esperando.</h2>
-                        <p><h5>¿Porqué? Porque <span class="header__intro__word" id="word">Simplifica...</span></h5></p>
+                        <h1 class="display-4">Para que ames la profesión que te apaciona</h1>
+                        <h3>Odontal Web es el software totalmente en la nube que todo odontólogo estaba esperando.</h3>
+                        <p><h3>¿Porqué? Porque <span class="header__intro__word" id="word">Simplifica...</span></h3></p>
                         <p></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Características (íconos y descripción) -->
-        <section>
+        <!-- Por Que Características (íconos y descripción) -->
+        <section class="porque">
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-3">
                     <div class="col md-4 tarjetas">
-                        <div>
-                            <img src="img/icono.png" class="iconoCard" alt="simplifica">
+                        <div class="text-center">
+                            <div class="iconos">
+                                <img src="img/icon-simplifica.png" class="iconoCard" alt="simplifica">
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">¿Porqué Simplifica?</h5>
-                                <p class="card-text">Desarrollamos un software sumamente simple y sencillo de usar, 100% en la nube y accesible desde cualquier dispositivo, amigable desde su implementación con soporte técnico personalizado.</p>
+                                <h5>¿Porqué Simplifica?</h5>
+                                <p>Desarrollamos un software sumamente simple y sencillo de usar, 100% en la nube y accesible desde cualquier dispositivo, amigable desde su implementación con soporte técnico personalizado.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col md-4 tarjetas">
-                        <div>
-                            <img src="img/icono.png" class="iconoCard" alt="soluciona">
+                        <div class="text-center">
+                            <div class="iconos">
+                                <img src="img/icon-soluciona.png" class="iconoCard" alt="soluciona">
+                            </div>
+                           
                             <div class="card-body">
-                                <h5 class="card-title">¿Porqué Soluciona?</h5>
-                                <p class="card-text">Es una herramienta ideal para la gestión de consultorios y clínicas odontológicas que reemplaza cualquier soporte en papel para el manejo de agenda de turnos, historias clínicas, facturaciones, incluso en prestaciones con obras sociales y prepagas con actualización automática de aranceles.</p>
+                                <h5>¿Porqué Soluciona?</h5>
+                                <p>Es una herramienta ideal para la gestión de consultorios y clínicas odontológicas que reemplaza cualquier soporte en papel para el manejo de agenda de turnos, historias clínicas, facturaciones, incluso en prestaciones con obras sociales y prepagas con actualización automática de aranceles.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col md-4 tarjetas">
-                        <div>
-                            <img src="img/icono.png" class="iconoCard" alt="optimiza">
+                        <div class="text-center">
+                            <div class="iconos">
+                                <img src="img/icon-optimiza.png" class="iconoCard" alt="optimiza">
+                            </div>
+                            
                             <div class="card-body">
-                                <h5 class="card-title">¿Porqué Optimiza?</h5>
-                                <p class="card-text">Reduce el tiempo dedicado a la administración de tu clínica o consultorio, unificando todos los procesos en una herramienta simple pensada por odontólogos y desarrollada en la tecnología más reciente.</p>
+                                <h5>¿Porqué Optimiza?</h5>
+                                <p>Reduce el tiempo dedicado a la administración de tu clínica o consultorio, unificando todos los procesos en una herramienta simple pensada por odontólogos y desarrollada en la tecnología más reciente.</p>
                             </div>
                         </div>
                     </div>
@@ -93,29 +103,38 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-3">
                     <div class="col md-4 tarjetas">
-                        <div>
-                            <img src="img/icono.png" class="iconoCard" alt="fideliza">
+                        <div class="text-center">
+                            <div class="iconos">
+                                <img src="img/icon-fideliza.png" class="iconoCard" alt="fideliza">
+                            </div>
+                            
                             <div class="card-body">
-                                <h5 class="card-title">¿Porqué Fideliza?</h5>
-                                <p class="card-text">Mejora el servicio de atención a los pacientes minimizando los tiempos de espera, recordando turnos para reducir el ausentismo y administrando los datos de los pacientes de una forma segura y confiable.</p>
+                                <h5>¿Porqué Fideliza?</h5>
+                                <p>Mejora el servicio de atención a los pacientes minimizando los tiempos de espera, recordando turnos para reducir el ausentismo y administrando los datos de los pacientes de una forma segura y confiable.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col md-4 tarjetas">
-                        <div>
-                            <img src="img/icono.png" class="iconoCard" alt="integra">
+                        <div class="text-center">
+                            <div class="iconos">
+                                <img src="img/icon-integra.png" class="iconoCard" alt="integra">
+                            </div>
+                            
                             <div class="card-body">
-                                <h5 class="card-title">¿Porqué Integra?</h5>
-                                <p class="card-text">En Odontal Web nos ocupamos de vincular nuestro sistema con información de convenios con obras sociales y prepagas a través de los Colegios Profesionales para brindarte una herramienta única e integrada para la facturación de tus prestaciones.</p>
+                                <h5>¿Porqué Integra?</h5>
+                                <p>En Odontal Web nos ocupamos de vincular nuestro sistema con información de convenios con obras sociales y prepagas a través de los Colegios Profesionales para brindarte una herramienta única e integrada para la facturación de tus prestaciones.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col md-4 tarjetas">
-                        <div>
-                            <img src="img/icono.png" class="iconoCard" alt="maximiza">
+                        <div class="text-center">
+                            <div class="iconos">
+                                <img src="img/icon-maximiza.png" class="iconoCard" alt="maximiza">  
+                            </div>
+                            
                             <div class="card-body">
-                                <h5 class="card-title">¿Porqué Maximiza?</h5>
-                                <p class="card-text">Incrementa los ingresos de tu consultorio o clínica hasta en un 30% gracias a la Gestión del Ciclo de Ingresos (Revenue Cycle Management) implementada desde las diferentes funciones de Odontal Web para rastrear los estados de cuenta de los pacientes, facturaciones con obras sociales y prepagas, desde la atención al paciente hasta el cobro del último saldo.</p>
+                                <h5>¿Porqué Maximiza?</h5>
+                                <p>Incrementa los ingresos de tu consultorio o clínica hasta en un 30% gracias a la Gestión del Ciclo de Ingresos (Revenue Cycle Management) implementada desde las diferentes funciones de Odontal Web para rastrear los estados de cuenta de los pacientes, facturaciones con obras sociales y prepagas, desde la atención al paciente hasta el cobro del último saldo.</p>
                             </div>
                         </div>
                     </div>
@@ -123,26 +142,115 @@
             </div>
         </section>
 
-        <!-- Registro (formulario y texto) -->
+        <!-- Contratar OdontalWeb (texto y botón) -->
         <section>
-            <div class="container-fluid bg-light mt-5">
-                <div class="container">
+            <div class="contratar">
+   
+                <div class="container-fluid contenido">
+
+                    <div class="container-fluid curva-top">
+                        <p><img src="img/icon-logo-odontal.png" alt="OdontalWeb"></p>
+                    </div>
+
+                   <div class="container">
+                       <div class="row py-5">
+                           <div class="col-md-7 p-5 mx-auto">
+                               <h2>Obtén Odontal Web y sé el profesional que siempre quisiste ser!</h2>
+                           </div>
+                           <div class="col-md-5 pt-md-5 mx-auto">
+                                <h5>Dejá de perder el tiempo con tanto papeleo, con Odontal Web es más simple, rápido y siempre tenés el control.</h5>
+                               <button type="button" class="btn btn-light mt-4 px-5">Contratá Ahora</button>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+
+                <div class="container-fluid bg-light p-0">
+                    <div class="container-fluid curva-bajo"></div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- Características Funcionales (sliders) -->
+        <section>
+            <div class="caracteristicas">
+                <div class="container-fluid bg-light pt-5">
+                    <div class="container">
+                        <div class="row py-5">
+                            <div class="p-5">
+                                <h2>Características Funcionales.</h2>
+                                <h4>Odontal Web es la solución omnicanal más completa del mercado. Usted solo se encargará de la práctica clínica y su equipo del profesionales. De la IT no encargamos nosotros!.</h4>
+                            </div>
+                            <div class="p-5 mx-auto">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="img/home-hero.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5>Agenda</h5>
+                                    <p>Personalizá la agenda para cada profesional de tu consultorio o clínica, determinando sus horarios de atención, duración de los turnos, vacasiones y feriados</p>
+                                    <a href="#" class="btn btn-primary">Ver Más</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- Tipos de Usuarios (imagen y descripción) -->
+        <section>
+            <div class="container-fluid bg-light">
+                <div class="container usuarios">
                     <div class="row py-5">
-                        <div class="card border-secondary rounded col-md-5 p-5">
-                            <form id="form">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <iframe title="Feedback Form" class="freshwidget-embedded-form" id="freshwidget-embedded-form" src="https://rosadiorjr.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded&formTitle=Ayuda&submitTitle=Enviar+comentari&submitThanks=Ok&screenshot=No&attachFile=no&searchArea=no" scrolling="no" height="360px" width="100%" frameborder="0" >
-                                    </iframe>
-                                </div>
-                                <button type="submit" class="btn btn-dark">Registrarme</button>
-                            </form>
+                        <div class="p-5">
+                            <h3>¿Qué clase de Odontólogo eres?</h3>
+                            <div class="p-4">
+                                <i id="antiguo" class="fas fa-user-times fa-10x"></i>
+                                <i id="moderno" class="fas fa-user-check fa-10x"></i>
+                            </div>  
                         </div>
-                        <div class="col-md-7 p-5">
-                            <h2>Registrate para conocer toda la potencia de Odontal Web.</h2>
-                            <h5>Con tu registro, además, obtendrás beneficios exclusivos y acceso a información antes que nadie.</h5>
+                        <div class="switch-button text-center py-3">
+                            <p>Antiguo</p>
+                            <!-- Checkbox -->
+                            <input type="checkbox" name="switch-button" id="switch-label" class="switch-button__checkbox">
+                            <!-- Botón -->
+                            <label for="switch-label" class="switch-button__label"></label>
+                            <p>Moderno</p>
+                        </div>
+                        <div class="p-5 mx-auto">
+                            <h4>¿Es tu primera experiencia con un sistema para <span>gestionar tu consultorio o clínica?</span></h4>
+                            <h6>Odontal Web es más que un sistema odontológico y nos preocupa igual que a vos poner en marcha tu primera experiencia digital.</h6>
+                            <h6>Por eso ponermos a disposición un servicio de implementación único y personalizado para la carga de tu agenda de los próximos 30 dias y comenzar a trabajar con Odontal Web en un abrir y cerrar de ojos.</h6>
+                        </div>
+                    </div>
+                    <div class="row text-center pb-5">
+                        <div class="col"><span>100%</span><p>Satisfacción</p></div>
+                        <div class="col soporte"><span>24/7</span><p>Soporte</p></div>
+                        <div class="col"><span>+100K</span><p>Dentistas*</p></div>
+                        <p class="text-muted mt-4">* Dentistas en toda la provincia de Chaco</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Asesoría (texto y botón) -->
+         <section>
+            <div class="container-fluid bg-light pt-5 text-center">
+                <div class="container">
+                    <div class="row">
+                        <h3>Solicitá una asesoría sin costo</h3>
+                        <div class="card-top mx-auto">
+                            <h5 class="titulo text-center">Odontal Web</h5>
+                            <h6 class="text-decoration-underline py-3">¿Pensás que puede ser una carga adicional de trabajo?</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid asesoria-bajo">
+                <div class="container">
+                    <div class="row">
+                        <div class="card-bajo mx-auto">
+                            <h6 class="py-3">¿Tenés dudas sobre cómo comenzar?¿Qué hacer con tu agenda manual y las fichas de tus pacientes?</h6>
+                            <div class="card-bajo-boton">Contactanos</div>
                         </div>
                     </div>
                 </div>
@@ -155,50 +263,35 @@
     <footer>
         <div class="container-fluid pie">
             <div class="row">
-                <div class="mx-auto my-5 p-3">
-                    <small class="text-muted">Odontal Web - © 2020 Todos los derechos reservados.</small>
+                <div class="d-flex flex-wrap justify-content-around">
+                    <div class="pie-logo">
+                        <img src="img/footer-logo-odontal.png" alt="OdontalWeb">
+                    </div>
+                    <div class="pie-texto">
+                        <small>Odontal Web ®. 2021. Todos los derechos reservados.</small>
+                    </div>
+                    <div class="pie-redes">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
             </div>
 
         </div>
     </footer>
 
-    <script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
-<style type="text/css" media="screen, projection">
-	@import url(https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.css); 
-</style> 
 
-
-<script>
-    function initFreshChat() {
-      window.fcWidget.init({
-        token: "1ac24570-4591-4c9f-99ab-20a7a498fdb6",
-        host: "https://wchat.freshchat.com"
-      });
-    }
-    function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
-  </script>
-  
-    <script>
-        window.fwSettings={
-        'widget_id':67000001772
-        };
-        !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}() 
-    </script>
-    <script type='text/javascript' src='https://widget.freshworks.com/widgets/67000001772.js' async defer></script>
-
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="js/letras_maquina.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     </script>
 </body>
 
