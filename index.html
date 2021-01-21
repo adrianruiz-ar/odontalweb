@@ -6,7 +6,7 @@
     <meta name="description" content="Aplicación para la Gestión de Consultorios y Centros Odontológicos">
     <meta name="keywords" content="Odontológia, Aplicación Web, Gestión de Consultorio, Obras Sociales">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OdontalWeb - OW</title>
+    <title>Odontal Web - Software</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -19,9 +19,9 @@
 <body>
     <!-- Cabecera del Sitio-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light pt-5">
+        <nav id="menuTop" class="navbar navbar-light fixed-top navbar-expand-lg py-4">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/header-logo-odontal.png" alt="OdontalWeb"></a>
+                <a class="navbar-brand" href="#"><img src="img/header-logo-odontal.png" alt="Odontal Web"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,7 +29,8 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav text-center">
                         <li class="nav-item">
-                            <a href="#contratar"><button id="btnRegistro" type="button" class="btn btn-dark">PEDILO</button></a>
+                            <a href="#"><button id="btnInicio" type="button" class="btn btn-outline-secondary">INICIAR SESIÓN</button></a>
+                            <a href="#contratar"><button id="btnRegistro" type="button" class="btn btn-dark">CONTRATÁ AHORA</button></a>
                         </li>
                     </ul>
                 </div>
@@ -42,23 +43,23 @@
         <!-- Cabecera / Hero (imagen y titulos) -->
         <section>
             <div class="container">
-                <div class="row my-5">
+                <div class="row hero">
                     <div class="col-md-6 order-md-2">
                         <div class="heroImagen pt-5">
                             <img src="img/home-hero.png" alt="OdontalWeb" class="img-fluid rounded mx-auto">
                         </div>
                     </div>
                     <div class="col-md-6 p-4 order-md-1">
-                        <h1 class="display-4 pt-5">Para que ames la profesión que te apaciona</h1>
-                        <h3>Odontal Web es el software totalmente en la nube que todo odontólogo estaba esperando.</h3>
-                        <p><h3>¿Porqué? Porque <span class="header__intro__word" id="word">Simplifica...</span></h3></p>
+                        <h4 class="pt-5">Software 100% en la nube para profesionales de la odontología</h4>
+                        <h2 class="display-4 py-4">Tus pacientes sonríen...<br />vos también</h2>
+                        <p><h3>¿Por qué Odontal Web? <br />Porque <span id="palabraPorque">Simplifica...</span></h3></p>
                         <p></p>
                     </div>
-                </div> <!-- / .row -->
-            </div>
+                </div> 
+            </div> <!-- / .container -->
         </section>
 
-        <!-- Por Que Características (íconos y descripción) -->
+        <!-- Por qué Odontal Web (beneficios y descripción) -->
         <section class="porque">
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-3">
@@ -68,7 +69,7 @@
                                 <img src="img/icon-simplifica.png" class="iconoCard" alt="simplifica">
                             </div>
                             <div class="card-body">
-                                <h5>¿Porqué Simplifica?</h5>
+                                <h5>¿Po rqué Simplifica?</h5>
                                 <p>Desarrollamos un software sumamente simple y sencillo de usar, 100% en la nube y accesible desde cualquier dispositivo, amigable desde su implementación con soporte técnico personalizado.</p>
                             </div>
                         </div>
@@ -80,7 +81,7 @@
                             </div>
                            
                             <div class="card-body">
-                                <h5>¿Porqué Soluciona?</h5>
+                                <h5>¿Por qué Soluciona?</h5>
                                 <p>Es una herramienta ideal para la gestión de consultorios y clínicas odontológicas que reemplaza cualquier soporte en papel para el manejo de agenda de turnos, historias clínicas, facturaciones, incluso en prestaciones con obras sociales y prepagas con actualización automática de aranceles.</p>
                             </div>
                         </div>
@@ -92,13 +93,13 @@
                             </div>
                             
                             <div class="card-body">
-                                <h5>¿Porqué Optimiza?</h5>
+                                <h5>¿Por qué Optimiza?</h5>
                                 <p>Reduce el tiempo dedicado a la administración de tu clínica o consultorio, unificando todos los procesos en una herramienta simple pensada por odontólogos y desarrollada en la tecnología más reciente.</p>
                             </div>
                         </div>
                     </div>
-                </div> <!-- / .row -->
-            </div>
+                </div> 
+            </div> <!-- / .container -->
 
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-3">
@@ -109,7 +110,7 @@
                             </div>
                             
                             <div class="card-body">
-                                <h5>¿Porqué Fideliza?</h5>
+                                <h5>¿Por qué Fideliza?</h5>
                                 <p>Mejora el servicio de atención a los pacientes minimizando los tiempos de espera, recordando turnos para reducir el ausentismo y administrando los datos de los pacientes de una forma segura y confiable.</p>
                             </div>
                         </div>
@@ -121,7 +122,7 @@
                             </div>
                             
                             <div class="card-body">
-                                <h5>¿Porqué Integra?</h5>
+                                <h5>¿Por qué Integra?</h5>
                                 <p>En Odontal Web nos ocupamos de vincular nuestro sistema con información de convenios con obras sociales y prepagas a través de los Colegios Profesionales para brindarte una herramienta única e integrada para la facturación de tus prestaciones.</p>
                             </div>
                         </div>
@@ -133,13 +134,13 @@
                             </div>
                             
                             <div class="card-body">
-                                <h5>¿Porqué Maximiza?</h5>
-                                <p>Incrementa los ingresos de tu consultorio o clínica hasta en un 30% gracias a la Gestión del Ciclo de Ingresos (Revenue Cycle Management) implementada desde las diferentes funciones de Odontal Web para rastrear los estados de cuenta de los pacientes, facturaciones con obras sociales y prepagas, desde la atención al paciente hasta el cobro del último saldo.</p>
+                                <h5>¿Por qué Maximiza?</h5>
+                                <p>Incrementa los ingresos de tu consultorio o clínica hasta en un 30% gracias a la gestión de cobranzas implementada desde las diferentes funciones de Odontal Web para rastrear los estados de cuenta de los pacientes, facturaciones con obras sociales y prepagas, desde la atención hasta el cobro del último saldo.</p>
                             </div>
                         </div>
                     </div>
-                </div> <!-- / .row -->
-            </div>
+                </div> 
+            </div> <!-- / .container -->
         </section>
 
         <!-- Contratar OdontalWeb (texto y botón) -->

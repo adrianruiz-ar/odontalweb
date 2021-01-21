@@ -1,7 +1,7 @@
 // Función texto maquina escribir hero Home
 
 var words = ['Simplifica...', 'Soluciona...', 'Optimiza...', 'Fideliza...', 'Integra...', 'Maximiza...'],
-    wordWrapper = document.getElementById('word'),
+    wordWrapper = document.getElementById('palabraPorque'),
     wordWrapperContent = wordWrapper.innerHTML,
     addingWord = false,
     counter = 1;
@@ -31,4 +31,4 @@ setInterval(function(){
         counter = 0;
     }
 
-}, 200);
+}, 100);
