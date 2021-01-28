@@ -36,3 +36,7 @@ checkbox.addEventListener( 'change', function() {
         modernoTexto.classList.add("user_ocultar");
     }
 });
+
+
+// Before and After
+
