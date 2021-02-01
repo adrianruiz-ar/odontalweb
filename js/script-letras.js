@@ -1,4 +1,4 @@
-// Función texto maquina escribir hero Home
+// Función texto maquina escribir Hero Home
 
 var words = ['Simplifica...', 'Soluciona...', 'Optimiza...', 'Fideliza...', 'Integra...', 'Maximiza...'],
     wordWrapper = document.getElementById('palabraPorque'),
