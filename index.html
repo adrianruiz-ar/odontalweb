@@ -19,7 +19,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
     <!-- Cabecera -->
     <header>
-        <nav id="menuTop" class="navbar navbar-light fixed-top navbar-expand-lg py-4">
+        <nav id="menuTop" class="navbar navbar-light fixed-top navbar-expand-lg py-2">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="img/header-logo-odontal.png" alt="Odontal Web"></a>
 
@@ -29,8 +29,8 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav text-center">
                         <li class="nav-item">
-                            <a href="#"><button id="btnInicio" type="button" class="btn btn-outline-secondary">INICIAR SESIÓN</button></a>
-                            <a href="#contratar"><button id="btnRegistro" type="button" class="btn btn-dark">CONTRATÁ AHORA</button></a>
+                            <a href="#"><button id="btnInicio" type="button" class="btn btn-outline-secondary">Iniciar Sesión</button></a>
+                            <a href="#contratar"><button id="btnRegistro" type="button" class="btn btn-dark">Contratá Ahora</button></a>
                         </li>
                     </ul>
                 </div>
@@ -42,19 +42,21 @@
     <main>
         <!-- Hero (imagen y titulos) -->
         <section>
-            <div class="container">
-                <div class="hero row">
-                    <div class="col-md-6 order-md-2">
-                        <div class="heroImagen pt-5">
-                            <img src="img/home-hero.png" alt="OdontalWeb" class="img-fluid rounded mx-auto">
+            <div class="container-fluid hero-fondo">
+                <div class="container">
+                    <div class="hero row">
+                        <div class="col-md-5 order-md-2">
+                            <div class="heroImagen">
+
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 p-4 order-md-1">
-                        <h4 class="pt-5">Software 100% en la nube para profesionales de la odontología</h4>
-                        <h2 class="display-4 py-4">Tus pacientes sonríen...<br />vos también</h2>
-                        <p><h3>¿Por qué Odontal Web? <br />Porque <span id="palabraPorque">Simplifica...</span></h3></p>
-                        <p></p>
-                    </div>
+                        <div class="col-md-7 hero-texto order-md-1">
+                            <p><h2 class="display-5">Tus pacientes sonríen...<br />vos también</h2></p>
+                            <p><h6>Software 100% en la nube para profesionales de la odontología</h6>
+                            <h6>¿Por qué Odontal Web? <br />Porque <span id="palabraPorque">Simplifica...</span></h6></p>
+                            <p></p>
+                        </div>
+                    </div> 
                 </div> 
             </div> <!-- / .container -->
         </section>
@@ -102,7 +104,7 @@
                 </div> 
             </div> <!-- / .container -->
 
-            <div class="container">
+            <div class="container mb-5">
                 <div class="row row-cols-1 row-cols-md-3">
                     <div class="col md-4 tarjetas">
                         <div class="text-center">
@@ -147,30 +149,14 @@
 
         <!-- Organizá con OdontalWeb (texto y botón) -->
         <section>
-            <div class="oganiza">
-                <div class="container-fluid contenido">
-                    <div class="container-fluid p-0" id="contratar">
-                        <div class="curva-logo"><img src="img/icon-logo-odontal.png" alt="OdontalWeb"></div> 
-                        <div class="curva-top">
-                            <svg viewBox="0 0 1196 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 0 C 243.60000000000002 0 365.4 110 609 110 L 609 110 L 609 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 608 110 C 843.2 110 960.8 0 1196 0 L 1196 0 L 1196 0 L 608 0 Z" stroke-width="0"></path></svg>
-                        </div>  
-                    </div>
-
-                   <div class="container">
-                       <div class="row"> 
-                           <div class="col-md-7 p-5 mx-auto"> 
-                               <h2>Organizá el funcionamiento de tu consultorio y sé el profesional que siempre quisiste ser.</h2>
-                           </div>
-                           <div class="col-md-5 pt-5 mx-auto">
-                                <h3>Con Odontal Web es más simple, ágil y siempre tenés el control.</h3>
-                                <button type="button" class="btn btn-light mt-4 px-5">COMUNICATE AHORA</button>
-                           </div>
-                       </div>
-                   </div>
-                </div>
-
-                <div class="container-fluid bg-light p-0">
-                    <svg viewBox="0 0 1196 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(68, 68, 68, 1)" d="M 0 0 C 243.60000000000002 0 365.4 110 609 110 L 609 110 L 609 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(68, 68, 68, 1)" d="M 608 110 C 843.2 110 960.8 0 1196 0 L 1196 0 L 1196 0 L 608 0 Z" stroke-width="0"></path> </svg>
+            <div class="container-fluid oganiza"> 
+                <div class="row"> 
+                    <div class="curva-logo">
+                        <p><img src="img/icon-logo-odontal.png" alt="OdontalWeb"></p>
+                        <p><h5>Organizá el funcionamiento de tu consultorio y sé el profesional que siempre quisiste ser.</h5>
+                        <h6>Con Odontal Web es más simple, ágil y siempre tenés el control.</h6></p>
+                        <p><button type="button" class="btn btn-light mt-4 px-3">Contratá Ahora</button></p>    
+                    </div>  
                 </div>
             </div> 
         </section>
@@ -178,22 +164,38 @@
 
         <!-- Características Funcionales -->
         <section>
-            <div class="container-fluid bg-light py-5">
-                <div class="caracteristicas container">
+            <div class="container-fluid py-5 caracteristicas">
+                <div class="container">
                     <div class="row py-5">
-                        <div class="caracteristica-titulo">AGENDA</div>
-                        <div class="col-8 caracteristica-texto"><p>Personalizá la agenda para cada profesional de tu consultorio o clínica, determinando sus horarios de atención, duración de los turnos, vacaciones y feriados, y delegá la agenda al personal administrativo haciendo más eficiente la gestión de turnos.</p></div>
-                        <div class="col-4 caracteristica-img"><img src="img/icon-maximiza.png"></div>
+                        <div class="col md-7">
+                            <p class="caracteristica-titulo">#1</p>
+                            <div class="caracteristica-texto">
+                                <p><span>Agenda</span></p>
+                                <p>Personalizá la agenda para cada profesional de tu consultorio o clínica, determinando sus horarios de atención, duración de los turnos, vacaciones y feriados, y delegá la agenda al personal administrativo haciendo más eficiente la gestión de turnos.</p>
+                            </div>
+                        </div>
+                        <div class="col md-5 caracteristica-img"><img src="img/agenda-ilustracion.png" class="img-fluid"></div>
+                    </div>
+
+                    <div class="row py-5">
+                        <div class="col md-5 caracteristica-img"><img src="img/historias-ilustracion.png" class="img-fluid"></div>
+                        <div class="col md-7">
+                            <p class="caracteristica-titulo text-end">#2</p>
+                            <div class="caracteristica-texto text-end">
+                                <p><span>Historias Clínicas</span></p>
+                                <p>Administrá las fichas de tus pacientes de forma digital cargando sus antecedentes médicos, adjuntando documentos de resultados de estudios, radiografías digitales y fotos, su historia clínica mediante el odontograma Odontal Web sumamente sencillo de utilizar.</p>
+                            </div>  
+                        </div>
                     </div>
                     <div class="row py-5">
-                        <div class="caracteristica-titulo">HISTORIAS CLINICAS</div>
-                        <div class="col-8 caracteristica-texto"><p>Administrá las fichas de tus pacientes de forma digital cargando sus antecedentes médicos, adjuntando documentos de resultados de estudios, radiografías digitales y fotos, su historia clínica mediante el odontograma Odontal Web sumamente sencillo de utilizar.</p></div>
-                        <div class="col-4 caracteristica-img"><img src="img/icon-maximiza.png"></div>
-                    </div>
-                    <div class="row py-5">
-                        <div class="caracteristica-titulo">PRESUPUESTOS</div>
-                        <div class="col-8 caracteristica-texto"><p>Generá presupuestos a tus pacientes directamente desde el odontograma Odontal Web configurando cada una de las prestaciones dentro del plan de tratamiento cargando automáticamente los aranceles del profesional o de la obra social del paciente según corresponda.</p></div>
-                        <div class="col-4 caracteristica-img"><img src="img/icon-maximiza.png"></div>
+                        <div class="col md-7">
+                            <p class="caracteristica-titulo">#3</p>
+                            <div class="caracteristica-texto">
+                                <p><span>Presupuestos</span></p>
+                                <p>Generá presupuestos a tus pacientes directamente desde el odontograma Odontal Web configurando cada una de las prestaciones dentro del plan de tratamiento cargando automáticamente los aranceles del profesional o de la obra social del paciente según corresponda.</p>
+                            </div>  
+                        </div>
+                        <div class="col md-5 caracteristica-img"><img src="img/presupuestos-ilustracion.png" class="img-fluid"></div>
                     </div>
                 </div><!-- / .container -->   
             </div>  
@@ -215,6 +217,16 @@
 
         <!-- Tipos de Usuarios (2 imagenes y descripción) -->
         <section>
+            <div class="prueba container-fluid bg-secondary">
+                <div class="row align-items-center p-3">
+                    <div id="user1" class="user1 col bg-light p-5">
+                        <p class="text-center"><button id="btnUser1">Ver</button></p>
+                    </div>
+                    <div id="user2" class="user2 move-left col bg-warning p-5">
+                        <p class="text-center"><button id="btnUser2">Ver</button></p>
+                    </div>
+                </div>
+            </div>
             <div class="container-fluid bg-light">
                 <div class="usuarios container">
                     <div class="row py-5">
@@ -268,7 +280,7 @@
                     </div>
                     <div class="row py-5">
                         <div>
-                            <button type="button" class="btn btn-outline-dark px-5">SOLICITÁ UNA ASESORÍA SIN COSTO</button>
+                            <button type="button" class="btn btn-outline-dark px-2">Solicitá Asesoría</button>
                         </div>
                     </div>
                 </div>
@@ -372,6 +384,7 @@
 
     <script type="text/javascript" src="js/script-letras.js"></script>
     <script type="text/javascript" src="js/script-varios.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
