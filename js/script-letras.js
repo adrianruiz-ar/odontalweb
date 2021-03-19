@@ -1,34 +1,55 @@
-// Función texto maquina escribir Hero Home
+var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
 
-var words = ['Simplifica...', 'Soluciona...', 'Optimiza...', 'Fideliza...', 'Integra...', 'Maximiza...'],
-    wordWrapper = document.getElementById('palabraPorque'),
-    wordWrapperContent = wordWrapper.innerHTML,
-    addingWord = false,
-    counter = 1;
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+  splitLetters(words[i]);
+}
 
-setInterval(function(){
+function changeWord() {
+  var cw = wordArray[currentWord];
+  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+  }
+  
+  for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+  }
+  
+  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
 
-    if(wordWrapperContent.length > 0 && !addingWord ) {
-        wordWrapper.innerHTML = wordWrapperContent.slice(0, -1);
-        wordWrapperContent = wordWrapper.innerHTML;
-    } else {
-        addingWord = true;
-    }
+function animateLetterOut(cw, i) {
+  setTimeout(function() {
+		cw[i].className = 'letter out';
+  }, i*80);
+}
 
-    if( addingWord ){
-        if( wordWrapperContent.length < words[counter].length  ) {
-        wordWrapper.innerHTML = words[counter].slice(0, wordWrapperContent.length + 1);
-        wordWrapperContent = wordWrapper.innerHTML;
-        } else {
-        if( counter < words.length) {
-            counter ++
-        }
-        addingWord = false;
-        }
-    }
+function animateLetterIn(nw, i) {
+  setTimeout(function() {
+		nw[i].className = 'letter in';
+  }, 340+(i*80));
+}
 
-    if( counter == words.length) {
-        counter = 0;
-    }
+function splitLetters(word) {
+  var content = word.innerHTML;
+  word.innerHTML = '';
+  var letters = [];
+  for (var i = 0; i < content.length; i++) {
+    var letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.innerHTML = content.charAt(i);
+    word.appendChild(letter);
+    letters.push(letter);
+  }
+  
+  wordArray.push(letters);
+}
 
-}, 100);
+changeWord();
+setInterval(changeWord, 2000);
+
