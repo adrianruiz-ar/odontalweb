@@ -15,18 +15,20 @@ let textoModerno = document.getElementById('textoModerno');
 userClasico.onclick = (e) => {
 	e.preventDefault();
 
-	imgClasico.style.display = 'block';
-	imgModerno.style.display = 'none';
-
-	fondoModerno.style.display = 'none';
 	fondoClasico.style.display = 'block';
-
-	imgClasico.classList.add('animate__animated', 'animate__bounceInLeft');
 	fondoClasico.classList.add('animate__animated', 'animate__bounceIn');
 
+	fondoModerno.style.display = 'none';
+
+	imgClasico.style.display = 'block';
+	imgClasico.classList.add('animate__animated', 'animate__bounceInLeft');
+
+	imgModerno.style.display = 'none';
+
 	textoClasico.style.display = 'block';
-	textoModerno.style.display = 'none';
 	textoClasico.classList.add('animate__animated', 'animate__fadeInUp');
+
+	textoModerno.style.display = 'none';
 }
 
 
@@ -34,17 +36,18 @@ userClasico.onclick = (e) => {
 userModerno.onclick = (e) => {
 	e.preventDefault();
 
-	imgClasico.style.display = 'none';
-	imgModerno.style.display = 'block';
-
 	fondoModerno.style.display = 'block';
-	fondoClasico.style.display = 'none';
-	
-
-	imgModerno.classList.add('animate__animated', 'animate__bounceInRight');
 	fondoModerno.classList.add('animate__animated', 'animate__bounceIn');
 
+	fondoClasico.style.display = 'none';
+
+	imgModerno.style.display = 'block';
+	imgModerno.classList.add('animate__animated', 'animate__bounceInRight');
+	
+	imgClasico.style.display = 'none';
+
 	textoModerno.style.display = 'block';
-	textoClasico.style.display = 'none';
 	textoModerno.classList.add('animate__animated', 'animate__fadeInUp');
+
+	textoClasico.style.display = 'none';
 }
