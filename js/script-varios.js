@@ -64,7 +64,6 @@ const tl = gsap.timeline ({
     scrollTrigger: {
         trigger: '.container_animacion',
         pin: true,
-        markers: true,
         start: 'top top',
         end: '100% 100%',
         scrub: 'true'
@@ -75,10 +74,10 @@ const tl = gsap.timeline ({
 tl.to(elemento_0, { opacity: 1, y:'30vh', scale: 0.5, duration: 3.5});
 tl.to(elemento_1, { opacity: 1, y:'-90vh', scale: 1.1, duration: 3.5}, '-=2');
 tl.to(elemento_0, { opacity: 0 }, '-=2');
-tl.to(elemento_2, { opacity: 1, y:'-80vh', scale: 1.2, duration: 3.5}, '-=1' );
+tl.to(elemento_2, { opacity: 1, y:'-85vh', scale: 1.2, duration: 3.5}, '-=1' );
 tl.to(elemento_3, { opacity: 1, y:'-70vh', scale: 1.2, duration: 3.5});
 tl.to(elemento_1, { y:'-150vh', duration: 3.5}, '-=2');
-tl.to(elemento_4, { opacity: 1, y:'-60vh', scale: 1.1, duration: 3.5}, '-=1');
+tl.to(elemento_4, { opacity: 1, y:'-70vh', scale: 1.1, duration: 3.5}, '-=1');
 tl.to(elemento_2, { y:'-150vh', duration: 3.5}, '-=2');
 
 
