@@ -1,4 +1,93 @@
-// Tipos de Usuarios
+
+// --------- Hero con Gsap ---------
+gsap.from(".hero-texto", {
+    duration: 0.4,
+    ease: "power2, in",
+    opacity: 0,
+    y: 40,
+    delay:1,
+    
+    scrollTrigger: {
+        trigger: ".hero-texto",
+        start: "top 70%",
+        end: "top 50%",
+        scrub: 1,
+        toggleActions: "restart pause reverse pause"
+    },
+})
+
+
+
+// --------- Porque con Gsap ---------
+
+gsap.from(".gsap-porque", {
+    duration: 0.4,
+    ease: "power2, in",
+    opacity: 0,
+    y: 40,
+    delay:1,
+    
+    scrollTrigger: {
+        trigger: ".gsap-porque",
+        start: "top 70%",
+        end: "top 50%",
+        scrub: 1,
+        toggleActions: "restart pause reverse pause"
+    },
+})
+
+
+
+
+// --------- Características con Gsap ---------
+
+// gsap.from(".caract-texto", {
+//     y: 100,
+//     duration: 0.4,
+//     opacity: 0,
+//     delay:1,
+//     scrollTrigger: {
+//         trigger: ".caract-texto",
+//         start: "top 80%",
+//         scrub: 1,
+//         toggleActions: "restart pause reverse pause"
+//     },
+// })
+
+const elemento_0 = document.querySelectorAll(".elemento_0")
+const elemento_1 = document.querySelectorAll(".elemento_1")
+const elemento_2 = document.querySelectorAll(".elemento_2")
+const elemento_3 = document.querySelectorAll(".elemento_3")
+const elemento_4 = document.querySelectorAll(".elemento_4")
+
+const tl = gsap.timeline ({
+    scrollTrigger: {
+        trigger: '.container_animacion',
+        pin: true,
+        markers: true,
+        start: 'top top',
+        end: '100% 100%',
+        scrub: 'true'
+
+    }
+})
+
+tl.to(elemento_0, { opacity: 1, y:'30vh', scale: 0.5, duration: 3.5});
+tl.to(elemento_1, { opacity: 1, y:'-90vh', scale: 1.1, duration: 3.5}, '-=2');
+tl.to(elemento_0, { opacity: 0 }, '-=2');
+tl.to(elemento_2, { opacity: 1, y:'-80vh', scale: 1.2, duration: 3.5}, '-=1' );
+tl.to(elemento_3, { opacity: 1, y:'-70vh', scale: 1.2, duration: 3.5});
+tl.to(elemento_1, { y:'-150vh', duration: 3.5}, '-=2');
+tl.to(elemento_4, { opacity: 1, y:'-60vh', scale: 1.1, duration: 3.5}, '-=1');
+tl.to(elemento_2, { y:'-150vh', duration: 3.5}, '-=2');
+
+
+
+
+
+
+
+// --------- Tipos de Usuarios ---------
 
 let userClasico = document.getElementById('userClasico');
 let userModerno = document.getElementById('userModerno');
@@ -69,11 +158,7 @@ userClasico.onclick = (e) => {
 	//textoClasico.classList.add('animate__animated', 'animate__fadeInUp');
     textoClasico.classList.add('animate__animated', 'animate__flipInX', 'animate__delay-5s');
     
-
-	
 }
-
-
 
 userModerno.onclick = (e) => {
 	e.preventDefault();
@@ -116,6 +201,4 @@ userModerno.onclick = (e) => {
     textoModerno.style.display = 'block';
 	//textoModerno.classList.add('animate__animated', 'animate__fadeInUp');
     textoModerno.classList.add('animate__animated', 'animate__flipInX', 'animate__delay-5s');
-    
-	
 }
