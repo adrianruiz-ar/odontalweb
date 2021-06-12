@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <script src="https://kit.fontawesome.com/9465af706e.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
@@ -179,28 +180,52 @@
         <section>
             <div class="container-fluid caracteristicas"> 
                 <div class="container container_animacion">
-                    <div class="elemento elemento_0">
-                        <h1>Características OdontalWeb</h1>
-                    </div>
-
                     <div class="row caracteristica-fila">
-                        <div class="col-md-6 caract-texto elemento elemento_1">
+                        <div id="agenda_turnos" class="col-md-6 caract-texto">
                             <p class="caracteristica-titulo">#1</p>
                             <div class="caracteristica-texto">  
                                 <p><span>Agenda de Turnos</span></p>
                                 <p>Personalizá la agenda para cada profesional de tu consultorio o clínica, determinando sus horarios de atención, duración de los turnos, vacaciones y feriados, y delegá el manejo de la agenda a tu recepcionista haciendo más eficiente la gestión de turnos.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 caracteristica-img mx-auto elemento elemento_2">
-                            <div class="caract-01-img"><img src="img/caracteristicas/01-agenda-001.png" class="img-fluid"></div>
+                        <div class="col-md-6 caracteristica-img mx-auto">
+                            <div class="caract-01-img">
+                                <div id="img-01-01">
+                                    <img src="img/caracteristicas/caracteristica-1.png" class="img-fluid">
+                                </div>
+                                <div id="img-01-02">
+                                    <img src="img/caracteristicas/caracteristica-2.png" class="img-fluid">
+                                </div>
+                                <div id="img-01-03">
+                                    <img src="img/caracteristicas/caracteristica-3.png" class="img-fluid">
+                                </div>
+                                <div id="img-01-04">
+                                    <img src="img/caracteristicas/caracteristica-4.png" class="img-fluid">
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="row caracteristica-fila">
-                        <div class="col-md-6 caracteristica-img mx-auto elemento elemento_3">
-                            <div id="caract-02" class="caract-02"><img src="img/caracteristicas/01-agenda-001.png" class="img-fluid"></div>
+                    
+                    <!-- Mas características
+                        
+                    <div class="row caracteristica-fila headline">
+                        <div class="col-md-6 caracteristica-img mx-auto">
+                            <div class="caract-02-img">
+                                <div id="img-02-01">
+                                    <img src="img/caracteristicas/caracteristica-1.png" class="img-fluid">
+                                </div>
+                                <div id="img-02-02">
+                                    <img src="img/caracteristicas/caracteristica-2.png" class="img-fluid">
+                                </div>
+                                <div id="img-02-03">
+                                    <img src="img/caracteristicas/caracteristica-3.png" class="img-fluid">
+                                </div>
+                                <div id="img-02-04">
+                                    <img src="img/caracteristicas/caracteristica-4.png" class="img-fluid">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 caract-texto elemento elemento_4">
+                        <div class="col-md-6 caract-texto">
                             <p class="caracteristica-titulo">#2</p>
                             <div class="caracteristica-texto">  
                                 <p><span>Historias Clínicas</span></p>
@@ -209,8 +234,8 @@
                         </div>
                     </div>
 
-                    <!-- Mas características 
-
+                    
+                    
 
                     <section id="presupuestos">
                         <div class="row py-3">
@@ -497,7 +522,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-
 
 
     <script type="text/javascript" src="js/script-letras.js"></script>

@@ -17,7 +17,6 @@ gsap.from(".hero-texto", {
 })
 
 
-
 // --------- Porque con Gsap ---------
 
 gsap.from(".gsap-porque", {
@@ -38,49 +37,42 @@ gsap.from(".gsap-porque", {
 
 
 
-
 // --------- Características con Gsap ---------
 
-// gsap.from(".caract-texto", {
-//     y: 100,
-//     duration: 0.4,
-//     opacity: 0,
-//     delay:1,
-//     scrollTrigger: {
-//         trigger: ".caract-texto",
-//         start: "top 80%",
-//         scrub: 1,
-//         toggleActions: "restart pause reverse pause"
-//     },
-// })
+let caracImg01 = document.getElementById('img-01-01');
+let caracImg02 = document.getElementById('img-01-02');
+let caracImg03 = document.getElementById('img-01-03');
+let caracImg04 = document.getElementById('img-01-04');
 
-const elemento_0 = document.querySelectorAll(".elemento_0")
-const elemento_1 = document.querySelectorAll(".elemento_1")
-const elemento_2 = document.querySelectorAll(".elemento_2")
-const elemento_3 = document.querySelectorAll(".elemento_3")
-const elemento_4 = document.querySelectorAll(".elemento_4")
+let caracImg05 = document.getElementById('img-02-01');
+let caracImg06 = document.getElementById('img-02-02');
+let caracImg07 = document.getElementById('img-02-03');
+let caracImg08 = document.getElementById('img-02-04');
 
-const tl = gsap.timeline ({
+
+gsap.from(".caract-01-img", {
+    duration: 0.4,
+    ease: "power2, in",
+    opacity: 0,
+    y: 40,
+    delay:1,
+    
     scrollTrigger: {
-        trigger: '.container_animacion',
-        pin: true,
-        start: 'top top',
-        end: '100% 100%',
-        scrub: 'true'
+        trigger: ".caract-01-img",
+        start: "top 70%",
+        end: "top 50%",
+        scrub: 1,
+        toggleActions: "restart pause reverse pause",  
+    },
+
+    onUpdate: function() {
+        caracImg01.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-0.5s');
+        caracImg02.classList.add('animate__animated', 'animate__bounceInLeft', 'animate__delay-1s');
+        caracImg03.classList.add('animate__animated', 'animate__bounceInRight', 'animate__delay-2s');
+        caracImg04.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-3s');
 
     }
 })
-
-tl.to(elemento_0, { opacity: 1, y:'30vh', scale: 0.5, duration: 3.5});
-tl.to(elemento_1, { opacity: 1, y:'-90vh', scale: 1.1, duration: 3.5}, '-=2');
-tl.to(elemento_0, { opacity: 0 }, '-=2');
-tl.to(elemento_2, { opacity: 1, y:'-85vh', scale: 1.2, duration: 3.5}, '-=1' );
-tl.to(elemento_3, { opacity: 1, y:'-70vh', scale: 1.2, duration: 3.5});
-tl.to(elemento_1, { y:'-150vh', duration: 3.5}, '-=2');
-tl.to(elemento_4, { opacity: 1, y:'-70vh', scale: 1.1, duration: 3.5}, '-=1');
-tl.to(elemento_2, { y:'-150vh', duration: 3.5}, '-=2');
-
-
 
 
 
