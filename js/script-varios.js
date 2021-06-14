@@ -74,6 +74,30 @@ gsap.from(".caract-01-img", {
     }
 })
 
+gsap.from(".caract-02-img", {
+    duration: 0.4,
+    ease: "power2, in",
+    //opacity: 0,
+    y: 40,
+    delay: 1,
+    
+    scrollTrigger: {
+        trigger: ".caract-02-img",
+        start: "bottom 10%",
+        end: "bottom 10%",
+        scrub: 1,
+        toggleActions: "restart pause reverse pause",  
+    },
+
+    onUpdate: function() {
+        caracImg05.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-0.5s');
+        caracImg06.classList.add('animate__animated', 'animate__bounceInLeft', 'animate__delay-1s');
+        caracImg07.classList.add('animate__animated', 'animate__bounceInRight', 'animate__delay-2s');
+        caracImg08.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-3s');
+
+    }
+})
+
 
 
 
