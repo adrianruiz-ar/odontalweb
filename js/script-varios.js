@@ -39,6 +39,36 @@ gsap.from(".gsap-porque", {
 
 // --------- Características con Gsap ---------
 
+let caractSubir = document.getElementById('caract-subir');
+let caractBajar = document.getElementById('caract-bajar');
+
+let caract01 = document.getElementById('caract-01');
+let caract02 = document.getElementById('caract-02');
+
+let caratCantidad = 0;
+
+caractBajar.onclick = (e) => {
+	e.preventDefault();
+
+    caract01.classList.add('caract-oculta');
+    caractBajar.classList.add('caract-oculta');
+    caract02.classList.remove('caract-oculta');
+    caractSubir.classList.remove('caract-oculta');
+
+}
+
+caractSubir.onclick = (e) => {
+	e.preventDefault();
+
+    caract01.classList.remove('caract-oculta');
+    caractBajar.classList.remove('caract-oculta');
+    caract02.classList.add('caract-oculta');
+    caractSubir.classList.add('caract-oculta');
+
+}
+
+
+
 let caracImg01 = document.getElementById('img-01-01');
 let caracImg02 = document.getElementById('img-01-02');
 let caracImg03 = document.getElementById('img-01-03');
@@ -156,6 +186,9 @@ userClasico.onclick = (e) => {
     divImgModerno07_dialogo2.classList.add('divModernoOut');
     divImgModerno08_dialogo3.classList.add('divModernoOut');
     divImgModerno09_mano.classList.add('divModernoOut');
+
+    userClasico.classList.add('btnActivo');
+    userModerno.classList.remove('btnActivo');
     
     userClasico.classList.remove('clasicoAnimacion');
     userModerno.classList.remove('modernoAnimacion');
@@ -199,6 +232,9 @@ userModerno.onclick = (e) => {
     divImgClasico06_dialogo2.classList.add('divClasicoOut');
     divImgClasico07_dialogo3.classList.add('divClasicoOut');
     divImgClasico08_mano.classList.add('divClasicoOut');
+
+    userModerno.classList.add('btnActivo');
+    userClasico.classList.remove('btnActivo');
     
     userClasico.classList.remove('clasicoAnimacion');
     userModerno.classList.remove('modernoAnimacion');

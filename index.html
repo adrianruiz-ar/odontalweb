@@ -24,7 +24,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
     <!-- Cabecera -->
     <header>
-        <nav id="menuTop" class="navbar navbar-light fixed-top navbar-expand-lg py-2">
+        <nav id="menuTop" class="navbar navbar-light fixed-top navbar-expand-lg py-1">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="img/header-logo-odontal.png" alt="Odontal Web"></a>
 
@@ -50,13 +50,11 @@
             <div class="container-fluid hero-fondo">
                 <div class="container">
                     <div class="hero row">
-                        <div class="col-md-5 order-md-2">
-                            <div class="heroImagen">
-
-                            </div>
+                        <div class="hero-movil">
+                            <img src="img/home-hero-slide.png" alt="">
                         </div>
-                        <div class="col-md-7 hero-texto order-md-1">
-                            <p><h6>Software para profesionales de la odontología.</h6></p>
+                        <div class="hero-texto">
+                            <p><h5>Software para profesionales de la odontología.</h5></p>
                             <p><h2 class="display-4 pt-3 pb-3">Tus pacientes sonríen...<br />vos también</h2></p>
                             <div class="text">
                                 <p>Odontal Web</p>
@@ -68,12 +66,11 @@
                                     <span class="word negro">integra</span>
                                     <span class="word verde">maximiza</span>
                                 </p>
-                            </div>
-                            
+                            </div> 
                         </div>
                     </div> 
                 </div> 
-            </div> <!-- / .container -->∫
+            </div> <!-- / .container -->
         </section>
 
 
@@ -179,8 +176,8 @@
         <!-- Características Funcionales -->
         <section>
             <div class="container-fluid caracteristicas"> 
-                <div class="container container_animacion">
-                    <div class="row caracteristica-fila">
+                <div class="container">
+                    <div id="caract-01" class="row caracteristica-fila">
                         <div id="agenda_turnos" class="col-md-6 caract-texto">
                             <p class="caracteristica-titulo">#1</p>
                             <div class="caracteristica-texto">  
@@ -188,7 +185,7 @@
                                 <p>Personalizá la agenda para cada profesional de tu consultorio o clínica, determinando sus horarios de atención, duración de los turnos, vacaciones y feriados, y delegá el manejo de la agenda a tu recepcionista haciendo más eficiente la gestión de turnos.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 caracteristica-img mx-auto">
+                        <div class="col-md-6 caracteristica-img-web mx-auto">
                             <div class="caract-01-img">
                                 <div id="img-01-01">
                                     <img src="img/caracteristicas/caracteristica-1.png" class="img-fluid">
@@ -204,10 +201,16 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-md-6 caracteristica-img-movil">
+                            <div class="mx-auto">
+                                <img src="img/caracteristicas/caracteristica-1.png" class="img-fluid">   
+                            </div>
+                        </div>
                     </div>
   
-                    <div class="row caracteristica-fila">
-                        <div class="col-md-6 caracteristica-img mx-auto">
+                    <div id="caract-02" class="row caracteristica-fila caract-oculta">
+                        <div class="col-md-6 caracteristica-img-web mx-auto">
                             <div class="caract-02-img">
                                 <div id="img-02-01">
                                     <img src="img/caracteristicas/caracteristica-1.png" class="img-fluid">
@@ -223,6 +226,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-6 caract-texto">
                             <p class="caracteristica-titulo">#2</p>
                             <div class="caracteristica-texto">  
@@ -230,55 +234,19 @@
                                 <p>Administrá las fichas de tus pacientes de forma digital cargando sus antecedentes médicos, adjuntando documentos de resultados de estudios, radiografías, fotos, y cargá las historias clínicas mediante el odontograma Odontal Web intuitivo y sencillo de utilizar.</p>
                             </div>
                         </div>
+
+                        <div class="col-md-6 caracteristica-img-movil">
+                            <div class="mx-auto">
+                                <img src="img/caracteristicas/caracteristica-1.png" class="img-fluid"> 
+                            </div>  
+                        </div>
                     </div>
 
-                    
-                    <!-- Mas características
+                </div>
 
-                    <section id="presupuestos">
-                        <div class="row py-3">
-                            <div class="col-md-7">
-                                <p class="caracteristica-titulo">#3</p>
-                                <div class="caracteristica-texto">
-                                    <p><span>Presupuestos</span></p>
-                                    <p>Generá presupuestos a tus pacientes directamente desde el odontograma Odontal Web cargando cada una de las prestaciones dentro del plan de tratamiento mostrando automáticamente tus honorarios prestacionales o de la obra social del paciente.</p>
-                                </div>  
-                            </div>
-                            <div class="col-md-5 caracteristica-img mx-auto">
-                                <img src="img/presupuestos-ilustracion.png" class="img-fluid">
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="control">
-                        <div class="row py-3">
-                            <div class="col-md-5 caracteristica-img mx-auto">
-                                <img src="img/estadocuenta-ilustracion.png" class="img-fluid">
-                            </div>
-                            <div class="col-md-7">
-                                <p class="caracteristica-titulo text-end">#4</p>
-                                <div class="caracteristica-texto text-end">
-                                    <p><span>Control de Deudas</span></p>
-                                    <p>Revisá los estados de cuenta de tus pacientes para realizar un seguimiento de las cobranzas mediante atractivos reportes de deudas ordenados por antigüedad y montos, que te permitan aplicar la mejor estrategia para maximizar tus ingresos.</p>
-                                </div>  
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="obras">
-                        <div class="row py-3">
-                            <div class="col-md-7">
-                                <p class="caracteristica-titulo">#5</p>
-                                <div class="caracteristica-texto">
-                                    <p><span>Obras Sociales</span></p>
-                                    <p>Facturá mensualmente tus honorarios con obras sociales y realizá el seguimiento de las liquidaciones. En Odontal Web nos ocupamos de mantener actualizados los aranceles pactados para cada una de las obras sociales y los Colegios Profesionales.</p>
-                                </div>  
-                            </div>
-                            <div class="col-md-5 caracteristica-img mx-auto">
-                                <img src="img/obrassociales-ilustracion.png" class="img-fluid">
-                            </div>
-                        </div>
-                    </section> -->
+                <div class="container caracteristica-boton">
+                    <a id="caract-subir" href="#" class="subir caract-oculta"><img src="img/caracteristicas/boton-flecha.png" alt=""></a>
+                    <a id="caract-bajar" href="#" class="bajar"><img src="img/caracteristicas/boton-flecha-abajo.png" alt=""></a>
                 </div>
                 
             </div>  <!-- / .container -->   
@@ -295,9 +263,9 @@
                     </div>
                     <div class="row wow fadeInUp">
                         <div class="container">
-                            <button type="button" id="userClasico" class="btn btn-dark clasico clasicoAnimacion">Clásico</button>
+                            <button type="button" id="userClasico" class="btn clasico clasicoAnimacion">Clásico</button>
 
-                            <button type="button" id="userModerno" class="btn btn-dark moderno modernoAnimacion">Moderno</button>
+                            <button type="button" id="userModerno" class="btn moderno modernoAnimacion">Moderno</button>
                         </div>
 
                     </div>
@@ -394,19 +362,19 @@
                         <h3 class="text-center display-5 wow fadeInUp">Ventajas de Odontal Web</h3>
                     </div>
                     <div class="row articles">
-                        <div class="col-sm-6 col-md-4 item">
+                        <div class="col-m-6 col-md-4 item">
                             <a href="#"><img class="img-fluid" src="img/icon-simple-y-moderno-01.svg"></a>
                             <h5>Simple y moderno</h5>
                             <p>Diseñamos una interfaz simple y amigable, guiada por profesionales de la odontología respondiendo a sus propias necesidades.</p>
                         </div>
                         <div
-                            class="col-sm-6 col-md-4 item">
+                            class="col-m-6 col-md-4 item">
                             <a href="#"><img class="img-fluid" src="img/icon-multiplataforma-01.svg"></a>
                             <h5>Multiplataforma</h5>
                             <p>No requiere instalar programas ni equipos especiales, funciona en la nube y accedés desde cualquier dispositivo y lugar.</p>
                         </div>
                         <div
-                            class="col-sm-6 col-md-4 item">
+                            class="col-m-6 col-md-4 item">
                             <a href="#"><img class="img-fluid" src="img/icon-flexible-y-seguro-01.svg"></a>
                             <h5>Flexible y Seguro</h5>
                             <p>Implementación en pocos días, sea tu primer software o no. Resguardamos la seguridad de los datos de tus pacientes.</p>
@@ -414,7 +382,7 @@
                     </div>
                     <div class="row">
                         <div class="container">
-                            <button type="button" class="btn btn-dark">Solicitá una asesoría sin costos</button>
+                            <button type="button" class="btn">Solicitá una asesoría sin costos</button>
                         </div>
                     </div>
                 </div>
@@ -425,7 +393,7 @@
         <!-- Precios Odontal Web -->
         <section>
             <div class="container-fluid precios p-3">
-                <div class=" pricing-table container">
+                <div class="pricing-table container">
                     <div class="block-heading">
                         <h3 class="display-5 wow fadeInUp">¡Elegí un plan acorde a tus necesidades!</h3> 
                     </div>   
@@ -435,15 +403,15 @@
                                 <div class="heading">
                                     <h3>BÁSICO</h3>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Todas las funcionalidades que necesitas para empezar.</p>
                                 <div class="features">
-                                    <h4><span class="feature">Full Support</span> : <span class="value">No</span></h4>
-                                    <h4><span class="feature">Duration</span> : <span class="value">30 Days</span></h4>
-                                    <h4><span class="feature">Storage</span> : <span class="value">10GB</span></h4>
+                                    <h4><span class="feature">Soporte Técnico</span> : <span class="value">No</span></h4>
+                                    <h4><span class="feature">Duración</span> : <span class="value">30 Días</span></h4>
+                                    <h4><span class="feature">Almacenamiento</span> : <span class="value">10GB</span></h4>
                                 </div>
                                 <div class="price text-center">
-                                    <h4>$25</h4>
-                                    <button class="btn btn-block btn-outline-secondary" type="submit">Contratá Ahora</button>
+                                    <h4>$990</h4>
+                                    <button class="btn btn-block" type="submit">Contratá Ahora</button>
                                 </div>
                             </div>
                         </div>
@@ -453,15 +421,15 @@
                                 <div class="heading">
                                     <h3>PROFESIONAL</h3>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Todas las funcionalidades del Plan Básico y mucho más.</p>
                                 <div class="features">
-                                    <h4><span class="feature">Full Support</span> : <span class="value">Yes</span></h4>
-                                    <h4><span class="feature">Duration</span> : <span class="value">60 Days</span></h4>
-                                    <h4><span class="feature">Storage</span> : <span class="value">50GB</span></h4>
+                                    <h4><span class="feature">Soporte Técnico</span> : <span class="value">Si</span></h4>
+                                    <h4><span class="feature">Duración</span> : <span class="value">60 Días</span></h4>
+                                    <h4><span class="feature">Almacenamiento</span> : <span class="value">50GB</span></h4>
                                 </div>
-                                <div class="price text-center">
-                                    <h4>$50</h4>
-                                    <button class="btn btn-block btn-secondary" type="submit">Contratá Ahora</button>
+                                <div class="price text-center btnProfesional">
+                                    <h4>$1990</h4>
+                                    <button class="btn btn-block " type="submit">Contratá Ahora</button>
                                 </div>
                                 
                             </div>
@@ -471,15 +439,15 @@
                                 <div class="heading">
                                     <h3>PREMIUM</h3>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Todas las funcionalidades del Plan Profesional y mucho más.</p>
                                 <div class="features">
-                                    <h4><span class="feature">Full Support</span> : <span class="value">Yes</span></h4>
-                                    <h4><span class="feature">Duration</span> : <span class="value">120 Days</span></h4>
-                                    <h4><span class="feature">Storage</span> : <span class="value">150GB</span></h4>
+                                    <h4><span class="feature">Soporte Técnico</span> : <span class="value">Si</span></h4>
+                                    <h4><span class="feature">Duración</span> : <span class="value">120 Días</span></h4>
+                                    <h4><span class="feature">Almacenamiento</span> : <span class="value">150GB</span></h4>
                                 </div>
                                 <div class="price text-center">
-                                    <h4>$150</h4>
-                                    <button class="btn btn-block btn-outline-secondary" type="submit">Contratá Ahora</button>
+                                    <h4>$2990</h4>
+                                    <button class="btn btn-block" type="submit">Contratá Ahora</button>
                                 </div>
                             </div>
                         </div>
