@@ -1,22 +1,3 @@
-
-// --------- Hero con Gsap ---------
-gsap.from(".hero-texto", {
-    duration: 0.4,
-    ease: "power2, in",
-    opacity: 0,
-    y: 40,
-    delay:1,
-    
-    scrollTrigger: {
-        trigger: ".hero-texto",
-        start: "top 70%",
-        end: "top 50%",
-        scrub: 1,
-        toggleActions: "restart pause reverse pause"
-    },
-})
-
-
 // --------- Porque con Gsap ---------
 
 gsap.from(".gsap-porque", {
@@ -28,6 +9,24 @@ gsap.from(".gsap-porque", {
     
     scrollTrigger: {
         trigger: ".gsap-porque",
+        start: "top 70%",
+        end: "top 50%",
+        scrub: 1,
+        toggleActions: "restart pause reverse pause"
+    },
+})
+
+// --------- Organizá con Gsap ---------
+
+gsap.from(".curva-logo p", {
+    duration: 0.4,
+    ease: "power2, in",
+    opacity: 0,
+    y: 40,
+    delay:1,
+    
+    scrollTrigger: {
+        trigger: ".curva-logo p",
         start: "top 70%",
         end: "top 50%",
         scrub: 1,
@@ -98,8 +97,8 @@ gsap.from(".caract-01-img", {
     onUpdate: function() {
         caracImg01.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-0.5s');
         caracImg02.classList.add('animate__animated', 'animate__bounceInLeft', 'animate__delay-1s');
-        caracImg03.classList.add('animate__animated', 'animate__bounceInRight', 'animate__delay-2s');
-        caracImg04.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-3s');
+        caracImg03.classList.add('animate__animated', 'animate__bounceInRight', 'animate__delay-1s');
+        caracImg04.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-2s');
 
     }
 })
@@ -122,8 +121,8 @@ gsap.from(".caract-02-img", {
     onUpdate: function() {
         caracImg05.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-0.5s');
         caracImg06.classList.add('animate__animated', 'animate__bounceInLeft', 'animate__delay-1s');
-        caracImg07.classList.add('animate__animated', 'animate__bounceInRight', 'animate__delay-2s');
-        caracImg08.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-3s');
+        caracImg07.classList.add('animate__animated', 'animate__bounceInRight', 'animate__delay-1s');
+        caracImg08.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-2s');
 
     }
 })

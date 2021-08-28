@@ -26,7 +26,7 @@
     <header>
         <nav id="menuTop" class="navbar navbar-light fixed-top navbar-expand-lg py-1">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/header-logo-odontal.png" alt="Odontal Web"></a>
+                <a class="navbar-brand" href="/index.html"><img src="img/header-logo-blanco.png" alt="Odontal Web"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,8 +34,11 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav text-center">
                         <li class="nav-item">
-                            <a href="#"><button id="btnInicio" type="button" class="btn btn-outline-secondary">Iniciar Sesión</button></a>
-                            <a href="#contratar"><button id="btnRegistro" type="button" class="btn btn-dark">Contratá Ahora</button></a>
+                            <a href="/funcionalidades.html">Funcionalidades</a>&nbsp;&nbsp;
+                            <a href="#precios">Precios</a>&nbsp;&nbsp;
+                            <a href="/preguntas-frecuentes.html">FAQ</a>&nbsp;&nbsp;
+                            <a href="#"><button id="btnInicio" type="button" class="btn btn-outline-dark">Iniciar Sesión</button></a>
+                            <a href="#"><button id="btnRegistro" type="button" class="btn btn-light">Contratá Ahora</button></a>
                         </li>
                     </ul>
                 </div>
@@ -46,37 +49,77 @@
     <!-- Cuerpo -->
     <main>
         
-        <!-- Funcionalidades (3 cards) -->
+        <!-- Hero Funcionalidades -->
         <section>
-            <div class="container-fluid ventajas text-center">
+            <div class="container-fluid hero-funcional text-center bg-white">
                 <div class="article-list container">
                     <div class="intro">
-                        <h3 class="text-center display-5 wow fadeInUp">Funcionales de Odontal Web</h3>
+                        <h4 class="text-center">Funcionalidades</h4>
+                        <h3 class="text-center display-5 wow fadeInUp">¿Qué puedo hacer con Odontal Web?</h3>
                     </div>
-                    <div class="row articles">
-                        <div class="col-m-6 col-md-4 item">
-                            <a href="#"><img class="img-fluid" src="img/icon-simple-y-moderno-01.svg"></a>
-                            <h5>Simple y moderno</h5>
-                            <p>Diseñamos una interfaz simple y amigable, guiada por profesionales de la odontología respondiendo a sus propias necesidades.</p>
-                        </div>
-                        <div
-                            class="col-m-6 col-md-4 item">
-                            <a href="#"><img class="img-fluid" src="img/icon-multiplataforma-01.svg"></a>
-                            <h5>Multiplataforma</h5>
-                            <p>No requiere instalar programas ni equipos especiales, funciona en la nube y accedés desde cualquier dispositivo y lugar.</p>
-                        </div>
-                        <div
-                            class="col-m-6 col-md-4 item">
-                            <a href="#"><img class="img-fluid" src="img/icon-flexible-y-seguro-01.svg"></a>
-                            <h5>Flexible y Seguro</h5>
-                            <p>Implementación en pocos días, sea tu primer software o no. Resguardamos la seguridad de los datos de tus pacientes.</p>
-                        </div>
-                    </div>
+                </div>
+            </div> <!-- / .container -->
+        </section>
+
+
+        <!-- Funcionalidades -->
+        <section>
+            <div class="container-fluid">
+                <div class="container faq">
+
                     <div class="row">
-                        <div class="container">
-                            <button type="button" class="btn">Solicitá una asesoría sin costos</button>
+                        <p><h4>Funciones Básicas</h4></p>
+                        <div class="accordion" id="primerosPasos">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Agenda de Turnos
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapse1" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" data-bs-parent="#primerosPasos">
+                                    <div class="accordion-body">
+                                        <p>This the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">Recordatorio para pacientes
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo" data-bs-parent="#primerosPasos">
+                                    <div class="accordion-body">
+                                        <p>This the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">Lista de Espera
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo" data-bs-parent="#primerosPasos">
+                                    <div class="accordion-body">
+                                        <p>This the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">Odontograma
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo" data-bs-parent="#primerosPasos">
+                                    <div class="accordion-body">
+                                        <p>This the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
             </div> <!-- / .container -->
         </section>
@@ -84,7 +127,7 @@
 
         <!-- Precios Odontal Web -->
         <section>
-            <div class="container-fluid precios p-3">
+            <div class="container-fluid precios p-3" id="precios">
                 <div class="pricing-table container">
                     <div class="block-heading">
                         <h3 class="display-5 wow fadeInUp">¡Elegí un plan acorde a tus necesidades!</h3> 
