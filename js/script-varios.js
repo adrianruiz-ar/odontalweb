@@ -95,10 +95,10 @@ gsap.from(".caract-01-img", {
     },
 
     onUpdate: function() {
-        caracImg01.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-0.5s');
+        caracImg01.classList.add('animate__animated', 'animate__bounceInDown', 'animate__delay-0.5s');
         caracImg02.classList.add('animate__animated', 'animate__bounceInLeft', 'animate__delay-1s');
         caracImg03.classList.add('animate__animated', 'animate__bounceInRight', 'animate__delay-1s');
-        caracImg04.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-2s');
+        caracImg04.classList.add('animate__animated', 'animate__bounceInLeft', 'animate__delay-2s');
 
     }
 })
@@ -119,10 +119,10 @@ gsap.from(".caract-02-img", {
     },
 
     onUpdate: function() {
-        caracImg05.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-0.5s');
+        caracImg05.classList.add('animate__animated', 'animate__bounceInDown', 'animate__delay-0.5s');
         caracImg06.classList.add('animate__animated', 'animate__bounceInLeft', 'animate__delay-1s');
         caracImg07.classList.add('animate__animated', 'animate__bounceInRight', 'animate__delay-1s');
-        caracImg08.classList.add('animate__animated', 'animate__bounceInUp', 'animate__delay-2s');
+        caracImg08.classList.add('animate__animated', 'animate__bounceInLeft', 'animate__delay-2s');
 
     }
 })
